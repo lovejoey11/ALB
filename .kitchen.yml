@@ -20,12 +20,12 @@ transport:
   ssh_key: ~/.ssh/chef_ubuntu.pem
 
 platforms:
-  - name: ubuntu-16.04
+  - name: centos-7
 
 suites:
   - name: default
     run_list:
-      - recipe[loadbalancer]
+      - recipe[webserver]
 
     verifier:
       inspec_tests:
