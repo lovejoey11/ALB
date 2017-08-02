@@ -1,4 +1,4 @@
-# loadbalancer
+# Apache2 Load Balancer -ALB
+# Chef - implementation
 
-TODO: Enter the cookbook description here.
-
+#
