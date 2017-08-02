@@ -6,7 +6,7 @@ driver:
   availability_zone: c
   subnet_id: subnet-e492cfbc
   instance_type: t2.micro
-  image_id: ami-835b4efa
+  image_id: ami-0c2aba6c
   security_group_ids: sg-6eea6614
   retryable_tries: 120
 
@@ -25,7 +25,7 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe["webserver"]
+      - recipe[loadbalancer]
 
     verifier:
       inspec_tests:
